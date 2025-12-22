@@ -2,7 +2,7 @@
 
 > A clean, beautiful, ambient portfolio template for Software Developers!
 
-> https://thekaushikgoswami.github.io
+> https://srithanadella.github.io
 
 ![GitHub stars](https://img.shields.io/github/stars/TheKaushikGoswami/thekaushikgoswami.github.io?style=for-the-badge) 
 ![GitHub forks](https://img.shields.io/github/forks/TheKaushikGoswami/thekaushikgoswami.github.io?style=for-the-badge)
@@ -10,7 +10,7 @@
 [![Website](https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=light_green&up_message=Online&url=https%3A%2F%2Fthekaushikgoswami.github.io)](http://thekaushikgoswami.github.io)
 
 ## Website Preview
-<a href="https://thekaushikgoswami.github.io" target="_blank">
+<a href="https://srithanadella.github.io" target="_blank">
     <img src="./assets/Website_Demo.png" align="center" alt="website preview">
 </a><br><br>
 
@@ -25,7 +25,7 @@
 ## 📦 Installation & Deployment
 
 - Clone the repository and modify the content of **index.html** according to your requirements.
-- Add or remove images from the `thekaushikgoswami.github.io/assets/` directory as per your needs.
+- Add or remove images from the `srithanadella.github.io/assets/` directory as per your needs.
 - I highly recommend using [GitHub Pages](https://docs.github.com/en/pages) to deploy the website in the easiest way.
 - To deploy your website using GitHub Pages, create a GitHub repository with the name `<your-github-username>.github.io`. Please use this exact name.
 - Push the generated code to the `master` branch of this repository.
@@ -42,7 +42,7 @@
 - [x] Particle Effect
 - [x] Footer
 
-To view a live example, **[click here](https://thekaushikgoswami.github.io/)**
+To view a live example, **[click here](https://srithanadella.github.io/)**
 
 ## 🛠️ Tools Used
 
@@ -58,7 +58,7 @@ To view a live example, **[click here](https://thekaushikgoswami.github.io/)**
 Fork the repository and then clone it locally by doing -
 
 ```bash
-git clone https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io.git
+git clone https://github.com/srithanadella/srithanadella.github.io.git
 ```
 
 ### Step 2: Build Your Code 🔨
