@@ -1,3 +1,59 @@
+// Fun teenage girl vibes ✨
+const funMessages = [
+    "Hey bestie! 💕", 
+    "Welcome to my world! 🌸", 
+    "You're absolutely gorgeous! ✨", 
+    "Thanks for visiting! 💖",
+    "Hope you're having the best day! 🌟",
+    "You seem super cool! 😊",
+    "Let's be friends! 👯‍♀️"
+];
+
+const sparkleEmojis = ['✨', '💫', '🌟', '⭐', '💖', '🦄', '🌸', '💕'];
+
+// Add sparkle animation on click
+$(document).ready(function() {
+    // Random greeting message
+    setTimeout(function() {
+        const randomMessage = funMessages[Math.floor(Math.random() * funMessages.length)];
+        console.log(randomMessage);
+    }, 2000);
+    
+    // Add click sparkles
+    $(document).on('click', function(e) {
+        createSparkle(e.pageX, e.pageY);
+    });
+    
+    // Cute hover effects for buttons
+    $('.btn_one').hover(
+        function() {
+            $(this).html($(this).html() + ' ✨');
+        },
+        function() {
+            $(this).html($(this).html().replace(' ✨', ''));
+        }
+    );
+});
+
+function createSparkle(x, y) {
+    const sparkle = $('<div class="sparkle">💖</div>');
+    sparkle.css({
+        position: 'fixed',
+        left: x - 10,
+        top: y - 10,
+        fontSize: '20px',
+        pointerEvents: 'none',
+        zIndex: 9999,
+        animation: 'sparkleFloat 1s ease-out forwards'
+    });
+    
+    $('body').append(sparkle);
+    
+    setTimeout(function() {
+        sparkle.remove();
+    }, 1000);
+}
+
 function showprojects(){
     $("#projects_container").css("display","inherit");
     $("#projects_container").addClass("animated slideInDown");
