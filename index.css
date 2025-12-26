@@ -14,7 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background:rgb(255, 50, 50);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ body {
     width:50px;
     height:50px;
     border:12px solid #fff;
-    border-bottom:12px solid rgb(255, 50, 50);
+    border-bottom:12px solid #ff9a9e;
     border-radius:50%;
     margin:0;
 }
@@ -47,10 +47,10 @@ body {
     display:inline-block;
 }
 .box1 {
-    background:rgb(255, 50, 50);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
 }
 .box2 {
-    background:rgb(255, 50, 50);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
     margin-left:-5px;
 }
 #menu {
@@ -79,7 +79,7 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    color:rgb(255, 50, 50);
+    color: #ff6b9d;
     font-size:70px;
     text-decoration:underline;
 }
@@ -187,13 +187,13 @@ body {
 }
 .social:hover { 
     cursor: pointer;
-    color:rgb(255, 50, 50);
+    color: #ff6b9d;
 }
 .container {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 50, 50);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #c1dfc4 100%);
     color:#fff;
     z-index:9;
     position:fixed;
@@ -247,13 +247,13 @@ body {
 }
 .btn_one:hover {
     cursor:pointer;
-    color:rgb(255, 50, 50);
+    color: #ff6b9d;
     background:#fff;
 }
 .btn_two {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
-    color:rgb(255, 50, 50);
+    color: #ff6b9d;
     background:#fff;
     border:3px solid #fff;
     padding:8px 40px;
@@ -317,7 +317,7 @@ body {
     font-weight:bold;
 }
 #footer a {
-    color:rgb(255, 50, 50) ;
+    color: #ff6b9d;
 }
 #particles-js {
     position:fixed;
@@ -332,14 +332,14 @@ body {
     background: #fff; 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 50, 50); 
+    background: #ff9a9e; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 50, 50,0.8); 
+    background: rgba(255, 154, 158, 0.8); 
 }
 ::selection {
 	color: #fff;
-	background: rgb(255, 50, 50);
+	background: #ff9a9e;
 }
 
 @media (max-width: 800px){ 
