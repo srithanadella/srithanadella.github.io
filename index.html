@@ -5,180 +5,275 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>✨ Sritha's World ✨ | hey besties!</title>
+    <title>🌌 Sritha's Cosmic World 🌌</title>
     <link rel="icon" type="image" href="./assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <!-- Star Field Background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <!-- Cosmic Loading -->
     <div id="loading">
         <div id="spinner"></div>
+        <div class="loading-text">🚀 Launching into orbit... ✨</div>
     </div>
-    <div id="particles-js"></div>
-    <div id="box">
-        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1900ms;"></div>
-        <div class="box2 animated bounceOutRight" style="animation-delay: 1900ms;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
-    </div>
-    <a id="about" onclick="showabout()" class="animated fadeIn nav-btn" style="animation-delay: 1000ms;">✨ about me</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn nav-btn" style="animation-delay: 1000ms;">💫 my vibe</a>
-    <a id="contact" onclick="showcontact()" class="animated fadeIn nav-btn" style="animation-delay: 1000ms;">💌 let's chat</a>
-    <a id="projects" onclick="showprojects()" class="animated fadeIn nav-btn" style="animation-delay: 1000ms;">🎨 my creations</a>
-    <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
-        <div class="profile-pic">
-            <div class="pic-placeholder">📸</div>
+
+    <!-- Main Universe Container -->
+    <div id="cosmic-universe" style="display: none;">   
+    <div id="box" style="display: none;"></div>
+        
+        <!-- Central Planet - Main Profile -->
+        <div id="main-planet" class="planet">
+            <div class="planet-glow"></div>
+            <div class="planet-content">
+                <div class="avatar-ring">
+                    <div class="avatar">🚀</div>
+                </div>
+                <h1 class="cosmic-title">Sritha Nadella</h1>
+                <p class="cosmic-subtitle">✨ Galactic Coder & Digital Explorer ✨</p>
+                <div class="orbit-ring">
+                    <div class="orbit-item" data-planet="about">🌍</div>
+                    <div class="orbit-item" data-planet="skills">🪐</div>
+                    <div class="orbit-item" data-planet="projects">🌙</div>
+                    <div class="orbit-item" data-planet="contact">⭐</div>
+                </div>
+            </div>
         </div>
-        <h1>✨ Sritha Nadella ✨</h1>
-        <h2>🌸 teen coder • dreamer • creator 🌸</h2>
-        <div class="fun-facts">
-            <span class="fact">🎵 music lover</span>
-            <span class="fact">🎮 gamer girl</span>
-            <span class="fact">📚 bookworm</span>
-        </div>
-        <div id="menu">
-            <a onclick="showabout()">✨ about me</a>
-            <a onclick="showwork()">💫 my vibe</a>
-            <a onclick="showcontact()">💌 let's chat</a>
-            <a onclick="showprojects()">🎨 my creations</a>
-        </div>
-        <table>
-            <tr>
-                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
-                        href="https://www.linkedin.com/in/sritha" title="LinkedIn 💼"><i class="fab fa-linkedin"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
-                        href="https://twitter.com/sritha" title="Twitter 🐦"><i class="fab fa-twitter"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
-                        href="https://instagram.com/sritha" title="Insta ✨"><i class="fab fa-instagram"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"
-                        href="https://github.com/srithanadella" title="GitHub 💻"><i class="fab fa-github"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"
-                        href="https://tiktok.com/@sritha" title="TikTok 🎬"><i class="fab fa-tiktok"></i></a></td>
-            </tr>
-        </table>
-    </div>
-    <div id="projects_container" class="container">
-        <div onclick="closeprojects()"><i class="fas fa-times"></i></div>
-        <h1>🎨 my creations</h1>
-        <section>
-            <h2>✨ projects that make me proud</h2>
-            <p>
-                Hey besties! These are some of the cool things I've been working on. Each project is like a piece of my heart 💕
-            </p>
-            <ul>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>🌈 My Portfolio Website</h3>
-                        <p>This super cute website you're looking at right now! Built with lots of love, glitter, and code ✨ It's my digital diary where I share my coding journey!</p>
-                        <div class="project_tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">💖</span>
+
+        <!-- Floating Navigation Galaxy -->
+        <nav id="cosmic-nav">
+            <div class="nav-constellation">
+                <button class="nav-star" data-target="about-planet">About Universe</button>
+                <button class="nav-star" data-target="skills-planet">Skill Galaxy</button>
+                <button class="nav-star" data-target="projects-planet">Project Nebula</button>
+                <button class="nav-star" data-target="contact-planet">Contact Cosmos</button>
+            </div>
+        </nav>
+
+        <!-- About Planet -->
+        <div id="about-planet" class="floating-planet hidden">
+            <div class="planet-surface">
+                <div class="close-planet">×</div>
+                <h2>🌍 About My Universe</h2>
+                <div class="planet-content-scroll">
+                    <div class="cosmic-card">
+                        <h3>👋 Greetings, Earthling!</h3>
+                        <p>I'm Sritha, a 12-year-old space cadet on an epic coding journey across the digital galaxy! When I'm not exploring new programming planets, you'll find me creating stellar websites, launching awesome projects, and inspiring other young astronauts to join the coding cosmos!</p>
+                    </div>
+                    
+                    <div class="cosmic-card">
+                        <h3>🚀 My Mission</h3>
+                        <p>To boldly code where no 12-year-old has coded before! I'm on a quest to make the web more beautiful, one galaxy at a time. My spaceship runs on creativity, curiosity, and cosmic amounts of determination!</p>
+                    </div>
+
+                    <div class="cosmic-stats">
+                        <div class="stat-orbit">
+                            <div class="stat-planet">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Years in Orbit</span>
+                            </div>
                         </div>
-                        <button class="btn_one"><a
-                                href="https://github.com/srithanadella/srithanadella.github.io"
-                                style="color: inherit; text-decoration: none">💻 View Code</a></button>
+                        <div class="stat-orbit">
+                            <div class="stat-planet">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Dreams & Ideas</span>
+                            </div>
+                        </div>
+                        <div class="stat-orbit">
+                            <div class="stat-planet">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Coding Hours</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </ul>
-        </section>
-    </div>
-    <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-times"></i></div>
-        <h1>💫 my vibe</h1>
-        <section>
-            <h2>✨ what makes me, me</h2>
-            <p>
-                Hey there, gorgeous! I'm Sritha, and welcome to my little corner of the internet! 🌸 I'm a 12-year-old girl who's absolutely obsessed with coding, creating, and making the world a little more colorful. When I'm not busy being the coolest kid in my coding class, you can find me jamming to my favorite playlists, binge-watching Netflix shows, or planning my next creative project! 
-            </p>
-            <p>
-                I believe that technology should be fun, inclusive, and totally aesthetic! That's why I pour my heart into every line of code I write. My dream? To inspire other girls to fall in love with coding just like I did! 💕
-            </p>
-            <div id="used">
-                <div><i class="fas fa-heart"></i>&nbsp;Creative Problem Solving</div>
-                <div><i class="fas fa-heart"></i>&nbsp;Making Friends Laugh</div>
-                <div><i class="fas fa-heart"></i>&nbsp;Web Design</div>
-                <div><i class="fas fa-heart"></i>&nbsp;Photography</div>
-                <div><i class="fas fa-heart"></i>&nbsp;Being Main Character Energy</div>
             </div>
-            <button class="btn_one"><a href="./assets/Resume.pdf" target="_blank"
-                    style="color: inherit; text-decoration: none">View
-                    Resume</a></button>
-        </section>
-    </div>
-    <div id="about_container" class="container">
-        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-        <h1>About</h1>
-        <section>
-            <h2>about me</h2>
-            <p>
-                Hello there! I'm Sritha Nadella, a non-professional coding learner. With a interest
-                in coding and websites and a keen eye for creative solutions, I will be practicing my coding with or without
-                my dad. My goal is to complete my own website with my own ideas!
-            </p>
-            <p>
-                In this website I am hoping to make your experience awsome! I will mainly focus on making it as funny and 
-                hilarious as possible. I shall add memes and jokes and other things too... But just remember if this site is 
-                not what you were expecting I am a 12 year old and this is my first website.
-            </p>
-            <p>
-                Feel free to explore my website, where you can witness the diverse range of things
-                I've had the privilege to work on. Please enjoy the very appropriate content I can provide to you unlike some other 
-                sites I know about...
-            </p>
+        </div>
 
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <p>
-                creating art, anoyying my brother, playing soccer, doing literature, being cool
-            </p>
-        </section>
-    </div>
-    <div id="contact_container" class="container">
-        <div onclick="closecontact()"><i class="fas fa-times"></i></div>
-        <h1>💌 let's chat</h1>
-        <section>
-            <h2>✨ slide into my DMs!</h2>
-            <p>
-                Hey bestie! 💕 I'd absolutely love to hear from you! Whether you want to chat about coding, share memes, collaborate on a project, or just say hi - my inbox is always open! Don't be shy, I promise I'm super friendly and probably just as obsessed with whatever you're into! 🌸
-            </p>
-            <div class="contact-options">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email Me!</h3>
-                    <p>For longer convos and serious stuff</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fab fa-instagram"></i>
-                    <h3>Instagram</h3>
-                    <p>For daily vibes and cute pics!</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fab fa-discord"></i>
-                    <h3>Discord</h3>
-                    <p>Let's game together sometime!</p>
+        <!-- Skills Galaxy -->
+        <div id="skills-planet" class="floating-planet hidden">
+            <div class="planet-surface">
+                <div class="close-planet">×</div>
+                <h2>🪐 Skill Galaxy</h2>
+                <div class="planet-content-scroll">
+                    <div class="skills-constellation">
+                        <div class="skill-star" data-skill="web">
+                            <div class="star-core">💻</div>
+                            <div class="skill-name">Web Development</div>
+                            <div class="skill-level">
+                                <div class="progress-orbit" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-star" data-skill="design">
+                            <div class="star-core">🎨</div>
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-level">
+                                <div class="progress-orbit" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-star" data-skill="python">
+                            <div class="star-core">🐍</div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">
+                                <div class="progress-orbit" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-star" data-skill="creative">
+                            <div class="star-core">✨</div>
+                            <div class="skill-name">Creative Problem Solving</div>
+                            <div class="skill-level">
+                                <div class="progress-orbit" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cosmic-technologies">
+                        <h3>🌌 Technologies in My Arsenal</h3>
+                        <div class="tech-constellation">
+                            <span class="tech-star">HTML5</span>
+                            <span class="tech-star">CSS3</span>
+                            <span class="tech-star">JavaScript</span>
+                            <span class="tech-star">Python</span>
+                            <span class="tech-star">Git</span>
+                            <span class="tech-star">VS Code</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <form action="https://formcarry.com/s/JKNu0aGkeQ" method="POST" class="formcarry-form">
-                <input name="name" type="text" placeholder="your name ✨" required />
-                <input name="email" type="email" placeholder="your email 💌" required />
-                <textarea name="message" placeholder="what's on your mind? 💭" rows="4" required></textarea>
-                <button class="btn_one">💕 send message</button>
-            </form>
-        </section>
+        </div>
+
+        <!-- Projects Nebula -->
+        <div id="projects-planet" class="floating-planet hidden">
+            <div class="planet-surface">
+                <div class="close-planet">×</div>
+                <h2>🌙 Project Nebula</h2>
+                <div class="planet-content-scroll">
+                    <div class="project-galaxy">
+                        
+                        <div class="project-star">
+                            <div class="project-glow"></div>
+                            <div class="project-content">
+                                <h3>🌌 Cosmic Portfolio</h3>
+                                <p>The very website you're exploring right now! A space-themed journey through my digital universe, built with love and stardust.</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">HTML</span>
+                                    <span class="tech-badge">CSS</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <a href="https://github.com/srithanadella/srithanadella.github.io" class="cosmic-button" target="_blank">
+                                    🚀 Launch Project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-star">
+                            <div class="project-glow"></div>
+                            <div class="project-content">
+                                <h3>🤖 Discord Bot Olympus</h3>
+                                <p>A powerful Discord bot that helps manage servers across the digital galaxy. It's like having an AI companion for your space station!</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Discord.py</span>
+                                    <span class="tech-badge">APIs</span>
+                                </div>
+                                <a href="https://github.com/srithanadella/Olympus" class="cosmic-button" target="_blank">
+                                    🛸 Explore Bot
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-star">
+                            <div class="project-glow"></div>
+                            <div class="project-content">
+                                <h3>💌 Modmail System</h3>
+                                <p>A cosmic communication system for Discord servers, helping messages travel across the digital space efficiently and beautifully.</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Discord</span>
+                                    <span class="tech-badge">Database</span>
+                                </div>
+                                <a href="https://github.com/srithanadella/lyq-hangout-modmail" class="cosmic-button" target="_blank">
+                                    📡 View System
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Cosmos -->
+        <div id="contact-planet" class="floating-planet hidden">
+            <div class="planet-surface">
+                <div class="close-planet">×</div>
+                <h2>⭐ Contact Cosmos</h2>
+                <div class="planet-content-scroll">
+                    <div class="cosmic-card">
+                        <h3>🌌 Send a Message Across the Galaxy</h3>
+                        <p>Ready to connect across the cosmic void? Whether you want to collaborate on interstellar projects, share coding adventures, or just say hello from your corner of the universe - I'd love to hear from you!</p>
+                    </div>
+
+                    <div class="contact-constellation">
+                        <a href="mailto:sritha@cosmic.dev" class="contact-star">
+                            <i class="fas fa-envelope"></i>
+                            <span>Cosmic Email</span>
+                        </a>
+                        <a href="https://github.com/srithanadella" class="contact-star">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Galaxy</span>
+                        </a>
+                        <a href="https://linkedin.com/in/sritha" class="contact-star">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Professional Orbit</span>
+                        </a>
+                        <a href="https://instagram.com/sritha" class="contact-star">
+                            <i class="fab fa-instagram"></i>
+                            <span>Visual Universe</span>
+                        </a>
+                    </div>
+
+                    <form class="cosmic-form" action="https://formcarry.com/s/JKNu0aGkeQ" method="POST">
+                        <div class="form-field">
+                            <input type="text" name="name" placeholder="Your name" required>
+                            <div class="field-glow"></div>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <div class="field-glow"></div>
+                        </div>
+                        <div class="form-field">
+                            <textarea name="message" placeholder="Your cosmic message..." rows="4" required></textarea>
+                            <div class="field-glow"></div>
+                        </div>
+                        <button type="submit" class="cosmic-button">
+                            🚀 Launch Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div id="footer">
-        made with 💖 and lots of ✨ in NJ <br> 
-        <a href="https://srithanadella.github.io">© 2025 Sritha's World - spreading good vibes only! 🌸</a>
+
+    <!-- Shooting Stars -->
+    <div class="shooting-stars">
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
     </div>
+
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
