@@ -1,282 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>🌌 Sritha's Cosmic World 🌌</title>
-    <link rel="icon" type="image" href="./assets/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+    <title>Sritha Nadella - STEM & Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Star Field Background -->
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-    
-    <!-- Cosmic Loading -->
-    <div id="loading">
-        <div id="spinner"></div>
-        <div class="loading-text">🚀 Launching into orbit... ✨</div>
-    </div>
-
-    <!-- Main Universe Container -->
-    <div id="cosmic-universe" style="display: none;">   
-    <div id="box" style="display: none;"></div>
-        
-        <!-- Central Planet - Main Profile -->
-        <div id="main-planet" class="planet">
-            <div class="planet-glow"></div>
-            <div class="planet-content">
-                <div class="avatar-ring">
-                    <div class="avatar">🚀</div>
-                </div>
-                <h1 class="cosmic-title">Sritha Nadella</h1>
-                <p class="cosmic-subtitle">✨ Galactic Coder & Digital Explorer ✨</p>
-                <div class="orbit-ring">
-                    <div class="orbit-item" data-planet="about">🌍</div>
-                    <div class="orbit-item" data-planet="skills">🪐</div>
-                    <div class="orbit-item" data-planet="projects">🌙</div>
-                    <div class="orbit-item" data-planet="contact">⭐</div>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Sritha Nadella</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+    </nav>
 
-        <!-- Floating Navigation Galaxy -->
-        <nav id="cosmic-nav">
-            <div class="nav-constellation">
-                <button class="nav-star" data-target="about-planet">About Universe</button>
-                <button class="nav-star" data-target="skills-planet">Skill Galaxy</button>
-                <button class="nav-star" data-target="projects-planet">Project Nebula</button>
-                <button class="nav-star" data-target="contact-planet">Contact Cosmos</button>
-            </div>
-        </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Creative Universe</h1>
+            <p class="hero-subtitle">Where STEM Meets Art</p>
+            <p class="hero-description">I'm a high school student passionate about blending technology, mathematics, and art to create innovative solutions and beautiful designs.</p>
+            <a href="#portfolio" class="cta-button">Explore My Work</a>
+        </div>
+        <div class="hero-visual">
+            <div class="geometric-shape shape-1"></div>
+            <div class="geometric-shape shape-2"></div>
+            <div class="geometric-shape shape-3"></div>
+        </div>
+    </section>
 
-        <!-- About Planet -->
-        <div id="about-planet" class="floating-planet hidden">
-            <div class="planet-surface">
-                <div class="close-planet">×</div>
-                <h2>🌍 About My Universe</h2>
-                <div class="planet-content-scroll">
-                    <div class="cosmic-card">
-                        <h3>👋 Greetings, Earthling!</h3>
-                        <p>I'm Sritha, a 12-year-old space cadet on an epic coding journey across the digital galaxy! When I'm not exploring new programming planets, you'll find me creating stellar websites, launching awesome projects, and inspiring other young astronauts to join the coding cosmos!</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi! I'm Sritha, a high school student with a passion for exploring the intersection of STEM and creative arts. I believe that technology and mathematics can be beautiful, and that art can be logical.</p>
+                    <p>My interests span across:</p>
+                    <ul class="interests-list">
+                        <li><strong>Programming & Web Development</strong> - Building interactive experiences with code</li>
+                        <li><strong>Data Visualization</strong> - Turning complex data into compelling visuals</li>
+                        <li><strong>Digital Design</strong> - Creating beautiful interfaces and graphics</li>
+                        <li><strong>Mathematics</strong> - Exploring patterns, algorithms, and computational thinking</li>
+                        <li><strong>Digital Art</strong> - Illustration, animation, and creative design</li>
+                    </ul>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Technical Skills</h3>
+                        <p>HTML, CSS, JavaScript, Python, Web Design, UI/UX</p>
                     </div>
-                    
-                    <div class="cosmic-card">
-                        <h3>🚀 My Mission</h3>
-                        <p>To boldly code where no 12-year-old has coded before! I'm on a quest to make the web more beautiful, one galaxy at a time. My spaceship runs on creativity, curiosity, and cosmic amounts of determination!</p>
+                    <div class="skill-card">
+                        <h3>Creative Skills</h3>
+                        <p>Digital Illustration, Graphic Design, Animation, Visual Storytelling</p>
                     </div>
-
-                    <div class="cosmic-stats">
-                        <div class="stat-orbit">
-                            <div class="stat-planet">
-                                <span class="stat-number">12</span>
-                                <span class="stat-label">Years in Orbit</span>
-                            </div>
-                        </div>
-                        <div class="stat-orbit">
-                            <div class="stat-planet">
-                                <span class="stat-number">∞</span>
-                                <span class="stat-label">Dreams & Ideas</span>
-                            </div>
-                        </div>
-                        <div class="stat-orbit">
-                            <div class="stat-planet">
-                                <span class="stat-number">100+</span>
-                                <span class="stat-label">Coding Hours</span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <h3>Problem-Solving</h3>
+                        <p>Algorithm Design, Computational Thinking, Prototyping</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Skills Galaxy -->
-        <div id="skills-planet" class="floating-planet hidden">
-            <div class="planet-surface">
-                <div class="close-planet">×</div>
-                <h2>🪐 Skill Galaxy</h2>
-                <div class="planet-content-scroll">
-                    <div class="skills-constellation">
-                        <div class="skill-star" data-skill="web">
-                            <div class="star-core">💻</div>
-                            <div class="skill-name">Web Development</div>
-                            <div class="skill-level">
-                                <div class="progress-orbit" style="--progress: 85%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-star" data-skill="design">
-                            <div class="star-core">🎨</div>
-                            <div class="skill-name">UI/UX Design</div>
-                            <div class="skill-level">
-                                <div class="progress-orbit" style="--progress: 75%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-star" data-skill="python">
-                            <div class="star-core">🐍</div>
-                            <div class="skill-name">Python</div>
-                            <div class="skill-level">
-                                <div class="progress-orbit" style="--progress: 70%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-star" data-skill="creative">
-                            <div class="star-core">✨</div>
-                            <div class="skill-name">Creative Problem Solving</div>
-                            <div class="skill-level">
-                                <div class="progress-orbit" style="--progress: 95%"></div>
-                            </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="portfolio-grid">
+                <!-- STEM Project 1 -->
+                <div class="portfolio-card">
+                    <div class="card-image stem-project">
+                        <span class="project-tag">STEM</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>An interactive web application that transforms climate data into stunning visualizations, making complex information accessible and engaging.</p>
+                        <div class="card-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Data</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="cosmic-technologies">
-                        <h3>🌌 Technologies in My Arsenal</h3>
-                        <div class="tech-constellation">
-                            <span class="tech-star">HTML5</span>
-                            <span class="tech-star">CSS3</span>
-                            <span class="tech-star">JavaScript</span>
-                            <span class="tech-star">Python</span>
-                            <span class="tech-star">Git</span>
-                            <span class="tech-star">VS Code</span>
+                <!-- Art Project 1 -->
+                <div class="portfolio-card">
+                    <div class="card-image art-project">
+                        <span class="project-tag">Art</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Digital Illustration Series</h3>
+                        <p>A collection of digital illustrations exploring the intersection of nature and technology, created with Procreate and Adobe Creative Suite.</p>
+                        <div class="card-tags">
+                            <span class="tag">Illustration</span>
+                            <span class="tag">Digital Art</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEM Project 2 -->
+                <div class="portfolio-card">
+                    <div class="card-image stem-project">
+                        <span class="project-tag">STEM</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Algorithmic Pattern Generator</h3>
+                        <p>A Python program that generates complex mathematical patterns and fractals, demonstrating the beauty of algorithms and computational geometry.</p>
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Math</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art Project 2 -->
+                <div class="portfolio-card">
+                    <div class="card-image art-project">
+                        <span class="project-tag">Art</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Animated Microinteractions</h3>
+                        <p>Hand-crafted CSS and JavaScript animations that bring user interfaces to life, focusing on smooth transitions and delightful user experiences.</p>
+                        <div class="card-tags">
+                            <span class="tag">CSS Animation</span>
+                            <span class="tag">UX Design</span>
+                            <span class="tag">Interactive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combined Project 1 -->
+                <div class="portfolio-card">
+                    <div class="card-image hybrid-project">
+                        <span class="project-tag">Hybrid</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Interactive Generative Art</h3>
+                        <p>A creative coding project combining p5.js and mathematics to create real-time, interactive generative art installations.</p>
+                        <div class="card-tags">
+                            <span class="tag">Creative Coding</span>
+                            <span class="tag">p5.js</span>
+                            <span class="tag">Generative Art</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combined Project 2 -->
+                <div class="portfolio-card">
+                    <div class="card-image hybrid-project">
+                        <span class="project-tag">Hybrid</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Science Communication Website</h3>
+                        <p>A beautifully designed website explaining complex STEM concepts through illustrations and interactive visualizations.</p>
+                        <div class="card-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Illustration</span>
+                            <span class="tag">Education</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Projects Nebula -->
-        <div id="projects-planet" class="floating-planet hidden">
-            <div class="planet-surface">
-                <div class="close-planet">×</div>
-                <h2>🌙 Project Nebula</h2>
-                <div class="planet-content-scroll">
-                    <div class="project-galaxy">
-                        
-                        <div class="project-star">
-                            <div class="project-glow"></div>
-                            <div class="project-content">
-                                <h3>🌌 Cosmic Portfolio</h3>
-                                <p>The very website you're exploring right now! A space-themed journey through my digital universe, built with love and stardust.</p>
-                                <div class="project-tech">
-                                    <span class="tech-badge">HTML</span>
-                                    <span class="tech-badge">CSS</span>
-                                    <span class="tech-badge">JavaScript</span>
-                                </div>
-                                <a href="https://github.com/srithanadella/srithanadella.github.io" class="cosmic-button" target="_blank">
-                                    🚀 Launch Project
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-star">
-                            <div class="project-glow"></div>
-                            <div class="project-content">
-                                <h3>🤖 Discord Bot Olympus</h3>
-                                <p>A powerful Discord bot that helps manage servers across the digital galaxy. It's like having an AI companion for your space station!</p>
-                                <div class="project-tech">
-                                    <span class="tech-badge">Python</span>
-                                    <span class="tech-badge">Discord.py</span>
-                                    <span class="tech-badge">APIs</span>
-                                </div>
-                                <a href="https://github.com/srithanadella/Olympus" class="cosmic-button" target="_blank">
-                                    🛸 Explore Bot
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-star">
-                            <div class="project-glow"></div>
-                            <div class="project-content">
-                                <h3>💌 Modmail System</h3>
-                                <p>A cosmic communication system for Discord servers, helping messages travel across the digital space efficiently and beautifully.</p>
-                                <div class="project-tech">
-                                    <span class="tech-badge">Python</span>
-                                    <span class="tech-badge">Discord</span>
-                                    <span class="tech-badge">Database</span>
-                                </div>
-                                <a href="https://github.com/srithanadella/lyq-hangout-modmail" class="cosmic-button" target="_blank">
-                                    📡 View System
-                                </a>
-                            </div>
-                        </div>
-
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'd love to hear about your ideas, collaborations, or feedback!</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
                     </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <span class="icon">📧</span>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-link">
+                        <span class="icon">💻</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-link">
+                        <span class="icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Contact Cosmos -->
-        <div id="contact-planet" class="floating-planet hidden">
-            <div class="planet-surface">
-                <div class="close-planet">×</div>
-                <h2>⭐ Contact Cosmos</h2>
-                <div class="planet-content-scroll">
-                    <div class="cosmic-card">
-                        <h3>🌌 Send a Message Across the Galaxy</h3>
-                        <p>Ready to connect across the cosmic void? Whether you want to collaborate on interstellar projects, share coding adventures, or just say hello from your corner of the universe - I'd love to hear from you!</p>
-                    </div>
-
-                    <div class="contact-constellation">
-                        <a href="mailto:sritha@cosmic.dev" class="contact-star">
-                            <i class="fas fa-envelope"></i>
-                            <span>Cosmic Email</span>
-                        </a>
-                        <a href="https://github.com/srithanadella" class="contact-star">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Galaxy</span>
-                        </a>
-                        <a href="https://linkedin.com/in/sritha" class="contact-star">
-                            <i class="fab fa-linkedin"></i>
-                            <span>Professional Orbit</span>
-                        </a>
-                        <a href="https://instagram.com/sritha" class="contact-star">
-                            <i class="fab fa-instagram"></i>
-                            <span>Visual Universe</span>
-                        </a>
-                    </div>
-
-                    <form class="cosmic-form" action="https://formcarry.com/s/JKNu0aGkeQ" method="POST">
-                        <div class="form-field">
-                            <input type="text" name="name" placeholder="Your name" required>
-                            <div class="field-glow"></div>
-                        </div>
-                        <div class="form-field">
-                            <input type="email" name="email" placeholder="Your email" required>
-                            <div class="field-glow"></div>
-                        </div>
-                        <div class="form-field">
-                            <textarea name="message" placeholder="Your cosmic message..." rows="4" required></textarea>
-                            <div class="field-glow"></div>
-                        </div>
-                        <button type="submit" class="cosmic-button">
-                            🚀 Launch Message
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sritha Nadella. All rights reserved. Made with passion and code.</p>
         </div>
+    </footer>
 
-    </div>
-
-    <!-- Shooting Stars -->
-    <div class="shooting-stars">
-        <div class="shooting-star"></div>
-        <div class="shooting-star"></div>
-        <div class="shooting-star"></div>
-    </div>
-
-    <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,85 +1,79 @@
-# Personal Portfolio ⚡
+# Sritha Nadella - STEM & Art Portfolio Website
 
-> A clean, beautiful, ambient portfolio template for Software Developers!
+A modern, professional portfolio website showcasing the work of a high school student passionate about STEM and digital art.
 
-> https://srithanadella.github.io
+## Features
 
-![GitHub stars](https://img.shields.io/github/stars/srithanadella/srithanadella.github.io?style=for-the-badge) 
-![GitHub forks](https://img.shields.io/github/forks/srithanadella/srithanadella.github.io?style=for-the-badge)
-[![Maintenance](https://img.shields.io/maintenance/yes/2023?style=for-the-badge)](https://github.com/srithanadella/srithanadella.github.io/commits/master)
-[![Website](https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=light_green&up_message=Online&url=https%3A%2F%2Fsrithanadella.github.io)](http://srithanadella.github.io)
+- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop devices
+- **Modern Aesthetic**: Clean, professional design with gradient accents and smooth animations
+- **Hero Section**: Eye-catching landing area with animated geometric shapes
+- **About Section**: Overview of skills and interests with card-based layout
+- **Portfolio Grid**: Showcase of projects across three categories:
+  - STEM projects (programming, data visualization, algorithms)
+  - Art projects (digital illustration, design, animation)
+  - Hybrid projects (combining both disciplines)
+- **Contact Form**: Simple contact form for inquiries
+- **Mobile Navigation**: Hamburger menu for mobile devices
+- **Interactive Elements**: Smooth scrolling, hover effects, and animations
 
-## Website Preview
-<a href="https://srithanadella.github.io" target="_blank">
-    <img src="./assets/Website_Demo.png" align="center" alt="website preview">
-</a><br><br>
+## Project Structure
 
-> Make Sure to ⭐ the Repo if You liked it -- It Helps!
-
-## 📋 Features
-
-⚡️ Open-Source\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Easy to modify
-
-## 📦 Installation & Deployment
-
-- Clone the repository and modify the content of **index.html** according to your requirements.
-- Add or remove images from the `srithanadella.github.io/assets/` directory as per your needs.
-- I highly recommend using [GitHub Pages](https://docs.github.com/en/pages) to deploy the website in the easiest way.
-- To deploy your website using GitHub Pages, create a GitHub repository with the name `<your-github-username>.github.io`. Please use this exact name.
-- Push the generated code to the `master` branch of this repository.
-
-## 📚 Sections
-
-- [x] About
-- [x] Skills
-- [x] Work
-- [x] Resume
-- [x] Contact
-- [x] Social Media Links
-- [x] Custom 404 Page
-- [x] Particle Effect
-- [x] Footer
-
-To view a live example, **[click here](https://srithanadella.github.io/)**
-
-## 🛠️ Tools Used
-
-* [<b>jQuery</b>](https://jquery.com/)
-* [<b>Animate.css</b>](https://animate.style/)
-* [<b>Google Fonts</b>](https://fonts.google.com/)
-* [<b>particles.js</b>](https://vincentgarreau.com/particles.js/)
-
-## 🚀 Contributing 
-
-### Step 1: Clone The Repo 💡
-
-Fork the repository and then clone it locally by doing -
-
-```bash
-git clone https://github.com/srithanadella/srithanadella.github.io.git
+```
+├── index.html       # Main HTML file with all content
+├── styles.css       # Complete styling with responsive design
+├── script.js        # JavaScript for interactivity
+└── README.md        # This file
 ```
 
-### Step 2: Build Your Code 🔨
+## Customization
 
-Start your magic by modifying the code and making changes of your own. Then push the commit using -
+### Update Personal Information
+Edit `index.html` to update:
+- Name and email in the contact section
+- LinkedIn and GitHub links
+- Project descriptions and tags
+- Bio and interests
 
-```bash
-git add .
-git commit -m "<your commit message here>"
-git push YOUR_REPO_URL develop
+### Modify Colors
+Edit the CSS variables in `styles.css`:
+```css
+:root {
+    --primary-color: #6366f1;      /* Indigo */
+    --secondary-color: #ec4899;    /* Pink */
+    --accent-color: #06b6d4;       /* Cyan */
+    /* ... more colors ... */
+}
 ```
 
-### Step 3: Create a new pull request 🔃
+### Add Portfolio Projects
+Add new portfolio cards by duplicating the portfolio-card structure in the portfolio section of `index.html`.
 
-After cloning & setting up the local project you can push the changes to your github fork and make a pull request (optional).
+## Technologies Used
 
-## 🤗 Special Thanks To
+- HTML5
+- CSS3 (Flexbox, Grid, Gradients, Animations)
+- Vanilla JavaScript (No frameworks required)
 
-- [imfunniee](https://github.com/imfunniee/fimbo) - For The Base Template of this Portfolio
-- [tsParticles](https://github.com/tsparticles/404-templates) - For The Custom 404 Page
+## Browser Support
 
-------
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-Made with :heart: in India
+## Future Enhancements
+
+- Add project detail pages with case studies
+- Integrate with a backend service for form submissions
+- Add image gallery for projects
+- Implement blog section for STEM and art articles
+- Add dark mode toggle
+- Create downloadable resume
+
+## License
+
+© 2025 Sritha Nadella. All rights reserved.
+
+---
+
+**Ready to customize?** Start by editing `index.html` with your personal information and project details!
